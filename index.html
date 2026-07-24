@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>C Global Liquor and Beverages Nigeria Ltd</title>
+
+  <meta
+    name="description"
+    content="C Global Liquor and Beverages Nigeria Ltd is introducing authentic South African wines, Rooibos teas, wellness products, cosmetics and organic foods to Nigeria."
+  >
+
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      line-height: 1.6;
+      color: #222;
+      background: #f7f7f4;
+    }
+
+    header {
+      background: #173c2d;
+      color: white;
+      padding: 18px 7%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 15px;
+    }
+
+    .brand {
+      font-size: 1.25rem;
+      font-weight: bold;
+      letter-spacing: 0.5px;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin-left: 20px;
+      font-size: 0.95rem;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    .hero {
+      min-height: 72vh;
+      padding: 90px 7%;
+      display: flex;
+      align-items: center;
+      background:
+        linear-gradient(rgba(18, 48, 36, 0.78), rgba(18, 48, 36, 0.78)),
+        url("https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?auto=format&fit=crop&w=1600&q=80")
+        center/cover no-repeat;
+      color: white;
+    }
+
+    .hero-content {
+      max-width: 760px;
+    }
+
+    .hero h1 {
+      font-size: clamp(2.2rem, 6vw, 4.5rem);
+      line-height: 1.08;
+      margin-bottom: 20px;
+    }
+
+    .hero p {
+      font-size: 1.15rem;
+      max-width: 650px;
+      margin-bottom: 30px;
+    }
+
+    .buttons {
+      display: flex;
+      gap: 14px;
+      flex-wrap: wrap;
+    }
+
+    .button {
+      display: inline-block;
+      padding: 13px 22px;
+      border-radius: 5px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .button-primary {
+      background: #d6a93b;
+      color: #173c2d;
+    }
+
+    .button-secondary {
+      border: 1px solid white;
+      color: white;
+    }
+
+    section {
+      padding: 70px 7%;
+    }
+
+    .section-title {
+      text-align: center;
+      margin-bottom: 14px;
+      color: #173c2d;
+      font-size: 2rem;
+    }
+
+    .section-intro {
+      max-width: 760px;
+      margin: 0 auto 40px;
+      text-align: center;
+      color: #555;
+    }
+
+    .about {
+      background: white;
+    }
+
+    .categories-grid,
+    .benefits-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
+      gap: 22px;
+      max-width: 1150px;
+      margin: 0 auto;
+    }
+
+    .card {
+      background: white;
+      border-radius: 10px;
+      padding: 28px;
+      box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
+      border-top: 4px solid #d6a93b;
+    }
+
+    .card h3 {
+      color: #173c2d;
+      margin-bottom: 10px;
+    }
+
+    .coming-soon {
+      display: inline-block;
+      margin-top: 15px;
+      padding: 5px 10px;
+      background: #efe7cf;
+      color: #6b541d;
+      border-radius: 20px;
+      font-size: 0.8rem;
+      font-weight: bold;
+    }
+
+    .partner {
+      background: #173c2d;
+      color: white;
+      text-align: center;
+    }
+
+    .partner h2 {
+      margin-bottom: 15px;
+      font-size: 2rem;
+    }
+
+    .partner p {
+      max-width: 760px;
+      margin: 0 auto 25px;
+    }
+
+    .contact {
+      background: white;
+    }
+
+    .contact-box {
+      max-width: 720px;
+      margin: 0 auto;
+      background: #f1f1eb;
+      padding: 32px;
+      border-radius: 10px;
+      text-align: center;
+    }
+
+    .contact-box a {
+      color: #173c2d;
+      font-weight: bold;
+    }
+
+    .notice {
+      padding: 25px 7%;
+      background: #fff7df;
+      color: #5d4a19;
+      text-align: center;
+      font-size: 0.92rem;
+    }
+
+    footer {
+      background: #0e271d;
+      color: white;
+      text-align: center;
+      padding: 25px 7%;
+      font-size: 0.9rem;
+    }
+
+    @media (max-width: 700px) {
+      header {
+        justify-content: center;
+        text-align: center;
+      }
+
+      nav a {
+        display: inline-block;
+        margin: 5px 8px;
+      }
+
+      .hero {
+        text-align: center;
+      }
+
+      .buttons {
+        justify-content: center;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <div class="brand">C GLOBAL BEVERAGES</div>
+
+    <nav>
+      <a href="#about">About</a>
+      <a href="#categories">Categories</a>
+      <a href="#partners">Partner With Us</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+
+    <section class="hero">
+      <div class="hero-content">
+        <h1>Authentic South African Products, Coming to Nigeria</h1>
+
+        <p>
+          C Global Liquor and Beverages Nigeria Ltd is building a carefully
+          selected portfolio of premium South African wines, Rooibos and
+          Honeybush teas, cosmetics, wellness products and organic foods.
+        </p>
+
+        <div class="buttons">
+          <a class="button button-primary" href="mailto:office@cglobalbeverages.com">
+            Join Our Launch List
+          </a>
+
+          <a class="button button-secondary" href="#partners">
+            Wholesale Enquiry
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section class="about" id="about">
+      <h2 class="section-title">About C Global</h2>
+
+      <p class="section-intro">
+        C Global Liquor and Beverages Nigeria Ltd is a Nigerian import,
+        marketing and distribution company focused on introducing authentic,
+        traceable and high-quality South African products to the Nigerian market.
+      </p>
+    </section>
+
+    <section id="categories">
+      <h2 class="section-title">Our Product Categories</h2>
+
+      <p class="section-intro">
+        Our initial portfolio is currently under supplier evaluation and
+        regulatory preparation.
+      </p>
+
+      <div class="categories-grid">
+
+        <article class="card">
+          <h3>Wines and Beverages</h3>
+          <p>
+            Selected South African wines and premium beverage products for
+            retail, hospitality and distribution channels.
+          </p>
+          <span class="coming-soon">Coming Soon</span>
+        </article>
+
+        <article class="card">
+          <h3>Rooibos and Honeybush</h3>
+          <p>
+            Authentic South African herbal teas sourced from recognised
+            producers and export-ready suppliers.
+          </p>
+          <span class="coming-soon">Coming Soon</span>
+        </article>
+
+        <article class="card">
+          <h3>Cosmetics and Skincare</h3>
+          <p>
+            Distinctive South African skincare and beauty products with a focus
+            on quality, authenticity and consumer trust.
+          </p>
+          <span class="coming-soon">Coming Soon</span>
+        </article>
+
+        <article class="card">
+          <h3>Organic Foods and Honey</h3>
+          <p>
+            Premium dried fruits, macadamias, fruit spreads, honey and selected
+            natural food products.
+          </p>
+          <span class="coming-soon">Coming Soon</span>
+        </article>
+
+        <article class="card">
+          <h3>Aloe and Wellness Products</h3>
+          <p>
+            Carefully selected South African Aloe and wellness products,
+            subject to applicable regulatory requirements.
+          </p>
+          <span class="coming-soon">Coming Soon</span>
+        </article>
+
+      </div>
+    </section>
+
+    <section>
+      <h2 class="section-title">Why C Global</h2>
+
+      <div class="benefits-grid">
+
+        <article class="card">
+          <h3>Authentic Sourcing</h3>
+          <p>
+            We focus on products sourced directly from reputable South African
+            producers and brand owners.
+          </p>
+        </article>
+
+        <article class="card">
+          <h3>Quality and Traceability</h3>
+          <p>
+            We prioritise consistent supply, product documentation and clear
+            country-of-origin information.
+          </p>
+        </article>
+
+        <article class="card">
+          <h3>Regulatory Preparation</h3>
+          <p>
+            Products will be introduced subject to supplier confirmation and
+            applicable Nigerian regulatory approvals.
+          </p>
+        </article>
+
+        <article class="card">
+          <h3>Wholesale and Retail Distribution</h3>
+          <p>
+            We are developing routes to market across retail, hospitality,
+            beauty, wellness and specialist distribution channels.
+          </p>
+        </article>
+
+      </div>
+    </section>
+
+    <section class="partner" id="partners">
+      <h2>Partner With Us</h2>
+
+      <p>
+        We welcome enquiries from South African suppliers, Nigerian
+        distributors, supermarkets, hotels, restaurants, pharmacies, salons,
+        spas and specialist retailers.
+      </p>
+
+      <a class="button button-primary" href="mailto:office@cglobalbeverages.com?subject=C Global Partnership Enquiry">
+        Send a Partnership Enquiry
+      </a>
+    </section>
+
+    <section class="contact" id="contact">
+      <h2 class="section-title">Contact Us</h2>
+
+      <div class="contact-box">
+        <p><strong>C Global Liquor and Beverages Nigeria Ltd</strong></p>
+        <p>RC Number: 9610270</p>
+        <p>45 Isawo Road, Agric, Ikorodu, Lagos State, Nigeria</p>
+
+        <p>
+          Email:
+          <a href="mailto:office@cglobalbeverages.com">
+            office@cglobalbeverages.com
+          </a>
+        </p>
+
+        <p>
+          Phone/WhatsApp:
+          <a href="https://wa.me/27687683501">
+            +27 68 768 3501
+          </a>
+        </p>
+      </div>
+    </section>
+
+    <div class="notice">
+      Products displayed or referenced on this website are currently under
+      evaluation and regulatory preparation. Availability is subject to
+      supplier confirmation and applicable Nigerian regulatory approvals.
+    </div>
+
+  </main>
+
+  <footer>
+    <p>
+      © 2026 C Global Liquor and Beverages Nigeria Ltd. All rights reserved.
+    </p>
+  </footer>
+
+</body>
+</html>
