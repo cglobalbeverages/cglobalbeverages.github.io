@@ -41,10 +41,21 @@
     }
 
     .brand {
-      font-size: 1.25rem;
-      font-weight: bold;
-      letter-spacing: 0.5px;
-    }
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-size: 1.25rem;
+  font-weight: bold;
+  letter-spacing: 0.5px;
+}
+
+.brand img {
+  width: 64px;
+  height: 64px;
+  object-fit: cover;
+  border-radius: 8px;
+  border: 1px solid rgba(255, 255, 255, 0.35);
+}
 
     nav a {
       color: white;
@@ -239,7 +250,10 @@
 <body>
 
   <header>
-    <div class="brand">C GLOBAL BEVERAGES</div>
+    <div class="brand">
+  <img src="Logo%20C%20Global%20Nigeria.jpg" alt="C Global Liquor and Beverages Nigeria Ltd logo">
+  <span>C GLOBAL BEVERAGES</span>
+</div>
 
     <nav>
       <a href="#about">About</a>
